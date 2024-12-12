@@ -1,0 +1,47 @@
+{
+  "name": "dumi-plugin-preset-html",
+  "version": "1.0.0",
+  "description": "Html support plugins for dumi",
+  "keywords": [
+    "dumi",
+    "plugin",
+    "preset",
+    "html"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "lib",
+    "dist",
+    "compiled"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "build:lib": "tsup --minify",
+    "dev": "father dev",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@types/hash-sum": "^1.0.0",
+    "@umijs/bundler-webpack": "^4.0.81",
+    "cheerio": "^1.0.0",
+    "codesandbox-import-utils": "^2.2.3",
+    "hash-sum": "^2.0.0",
+    "html-loader": "^5.1.0"
+  },
+  "devDependencies": {
+    "father": "^4.1.9",
+    "tsup": "^8.0.1"
+  },
+  "peerDependencies": {
+    "dumi": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "xxm6318 <xxm6318@qq.com>"
+  ]
+}

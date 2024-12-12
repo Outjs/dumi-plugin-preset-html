@@ -1,0 +1,186 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Html compilation test > script`] = `
+{
+  "css": "",
+  "js": "
+async function() {
+  const __html__ = {};
+__html__.render = function() {
+    setTimeout(()=>{
+        try {
+            console.log('hello');
+        } catch (error) {
+            console.error(error);
+        }
+    }, 100);
+    return ``;
+};
+__html__.__id__ = "634c1b1a";
+return {
+    default: __html__
+};
+
+}
+`;
+
+exports[`Html compilation test > script + html`] = `
+{
+  "css": "",
+  "js": "
+async function() {
+  const __html__ = {};
+__html__.render = function() {
+    setTimeout(()=>{
+        try {
+            const msg = 'Hello!';
+            function log() {
+                console.log(msg);
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }, 100);
+    return `
+<button @click="log">button</button>`;
+};
+__html__.__id__ = "fcaf92d6";
+return {
+    default: __html__
+};
+
+}
+`;
+
+exports[`Vue SFC compilation test > script options + jsx 1`] = `
+{
+  "css": "",
+  "js": "
+import { withDirectives as _withDirectives, createVNode as _createVNode, vShow as _vShow } from "vue";
+const __sfc__ = {
+  data() {
+    return {
+      visible: true
+    };
+  },
+  render() {
+    return _withDirectives(_createVNode("input", null, null), [[_vShow, this.visible]]);
+  }
+};",
+}
+`;
+
+exports[`Vue SFC compilation test > script setup + template 1`] = `
+{
+  "css": "",
+  "js": "
+import { toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock } from "vue";
+const msg = 'Hello!';
+const __sfc__ = {
+  __name: 'xx',
+  setup(__props) {
+    function log() {
+      console.log(msg);
+    }
+    return (_ctx, _cache) => {
+      return _openBlock(), _createElementBlock("button", {
+        onClick: log
+      }, _toDisplayString(msg));
+    };
+  }
+};",
+}
+`;
+
+exports[`Vue SFC compilation test > script setup + ts 1`] = `
+{
+  "css": "",
+  "js": "
+import { defineComponent as _defineComponent } from 'vue';
+import { toDisplayString as _toDisplayString } from "vue";
+const __sfc__ = _defineComponent({
+  __name: 'xx',
+  props: {
+    id: {
+      type: null,
+      required: true
+    },
+    msg: {
+      type: String,
+      required: true
+    }
+  },
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return _toDisplayString(_ctx.msg);
+    };
+  }
+});",
+}
+`;
+
+exports[`Vue SFC compilation test > script setup + tsx 1`] = `
+{
+  "css": "",
+  "js": "
+import { createVNode as _createVNode, createTextVNode as _createTextVNode, Fragment as _Fragment } from "vue";
+const __sfc__ = {
+  setup() {
+    return () => _createVNode(_Fragment, null, [_createTextVNode("hello")]);
+  }
+};",
+}
+`;
+
+exports[`Vue SFC compilation test > script setup 1`] = `
+{
+  "css": "",
+  "js": "
+const __sfc__ = {
+  __name: 'xx',
+  setup(__props) {
+    console.log('hello');
+    return () => {};
+  }
+};",
+}
+`;
+
+exports[`Vue SFC compilation test > template only 1`] = `
+{
+  "css": "",
+  "js": "
+const __sfc__ = {};
+import { openBlock as _openBlock, createElementBlock as _createElementBlock } from "vue";function render(_ctx, _cache) {
+  return _openBlock(), _createElementBlock("p", null, "template only");
+}
+      __sfc__.render = render;",
+}
+`;
+
+exports[`Vue SFC compilation test > two script tags 1`] = `
+{
+  "css": "",
+  "js": "
+import { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from "vue";
+import { ref } from 'vue';
+import Button from '@lib';
+const __default__ = {
+  props: ['p']
+};
+const __sfc__ = Object.assign(__default__, {
+  __name: 'xx',
+  setup(__props) {
+    const msg = ref('hello');
+    return (_ctx, _cache) => {
+      return _openBlock(), _createBlock(_unref(Button), {
+        onClick: _ctx.log
+      }, {
+        default: _withCtx(() => [_createTextVNode(_toDisplayString(msg.value), 1 /* TEXT */)]),
+        _: 1 /* STABLE */
+      }, 8 /* PROPS */, ["onClick"]);
+    };
+  }
+});",
+}
+`;
