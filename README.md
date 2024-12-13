@@ -31,6 +31,7 @@ write the following code in index.md, which can execute HTML code, including Jav
 
 \```html
 <div>Hello, I can dumi plugin for preset html!</div>
+
 ```
 
 ### demo2:
@@ -47,4 +48,5 @@ write the following code in index.md, which can execute HTML code, including Jav
         color: red;
     }
 </style>
+
 \```
