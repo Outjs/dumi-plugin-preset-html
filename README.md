@@ -13,3 +13,12 @@ dumi Html tech stack support
 ## Install
 
 npm i dumi-plugin-preset-html --save
+
+## Config
+
+```
+// .dumirc.ts
+export default {
+  presets: ['dumi-plugin-preset-html'],
+};
+```
