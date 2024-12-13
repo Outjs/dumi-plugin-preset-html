@@ -12,7 +12,9 @@ dumi Html tech stack support
 
 ## Install
 
+```
 npm i dumi-plugin-preset-html --save
+```
 
 ## Config
 
@@ -29,14 +31,20 @@ write the following code in index.md, which can execute HTML code, including Jav
 
 ### demo1:
 
-\```html
-<div>Hello, I can dumi plugin for preset html!</div>
+````
+```html
+
+<div>Hello, I`m dumi plugin for preset html!</div>
 
 ```
 
+````
+
 ### demo2:
 
-\```html
+````
+```html
+
 <div class="my-class">Hello, I`m surport style and javasript</div>
 
 <script>
@@ -49,4 +57,5 @@ write the following code in index.md, which can execute HTML code, including Jav
     }
 </style>
 
-\```
+```
+````
