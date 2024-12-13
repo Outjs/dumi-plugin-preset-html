@@ -5,7 +5,7 @@ export default function preflight(component: any) {
     const el = document.createElement('div');
     el.style.display = 'none';
     el.style.overflow = 'hidden';
-    document.body.appendChild(el);console.log('preflight', component)
+    document.body.appendChild(el);
     //if (component.__css__) {
       setTimeout(() => {
         document

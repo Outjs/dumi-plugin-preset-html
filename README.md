@@ -1,4 +1,4 @@
-# dumi-plugin-preset-vue
+# dumi-plugin-preset-html
 
 dumi Html tech stack support
 
@@ -10,4 +10,6 @@ dumi Html tech stack support
 - [x] Webpack processing
 - [x] Support live demo
 
+## Install
 
+npm i dumi-plugin-preset-html --save

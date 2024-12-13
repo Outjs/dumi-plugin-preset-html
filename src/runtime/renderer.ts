@@ -13,17 +13,14 @@ function getComponent(component: string) {
       return {};
     };
     evalCommonJS(code, { module, exports, require });
-    console.log('dddddd', module.exports);
     return module.exports?.default;
   }
   return '';
 }
 const renderer: IDemoCancelableFn = async function (canvas, component: any) {
-  console.log('AAA-----', canvas, component);
   if (typeof component === 'string') {
     component = getComponent(component);
   }
-  console.log('BBB-----', component);
 
   // if (component?.__stylesheets__?.length > 0) {
   //   const stylesheets = component.__stylesheets__.filter((item: StyleSheet) => item.href);

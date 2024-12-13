@@ -113,7 +113,6 @@ exports["default"] = void 0;\n`;
   code += `\n${COMP_IDENTIFIER}.__css__ = ${JSON.stringify(result.css)};`;
   code += `\n const _default = ${COMP_IDENTIFIER};\n`;
   code += `exports["default"] = _default`;
-  console.log(result, 'uuuuuuuuuuuu')
   return { code, css: result.css };
 }
 

@@ -9,15 +9,12 @@ export function modifyStackBlitzData(memo: any, props: any) {
     files: {},
     dependencies: {},
   };
-  console.log('222----',memo, '333',props)
   const files = getApp(props);
-  console.log('444----',files)
   config.files = Object.entries(files).reduce((acc, [k, v]) => {
     acc[k] = v.content;
     return acc;
   }, {} as Record<string, string>);
   Object.assign(memo, config);
-  console.log('666----',memo, '777',props)
   return memo;
 }
 
