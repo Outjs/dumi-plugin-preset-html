@@ -1,6 +1,6 @@
 {
   "name": "dumi-plugin-preset-html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Html support plugins for dumi",
   "homepage": "https://github.com/Outjs/dumi-plugin-preset-html",
   "bugs": "https://github.com/Outjs/dumi-plugin-preset-html/issues",
@@ -12,7 +12,8 @@
     "dumi",
     "plugin",
     "preset",
-    "html"
+    "html",
+    "dumi-plugin"
   ],
   "license": "MIT",
   "main": "dist/index.js",
