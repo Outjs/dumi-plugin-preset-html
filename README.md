@@ -22,3 +22,25 @@ export default {
   presets: ['dumi-plugin-preset-html'],
 };
 ```
+
+## Example
+
+write the following code in index.md, which can execute HTML code, including JavaScript, css.
+
+```html
+<div>Hello, I can dumi plugin for preset html!</div>
+```
+
+```html
+<div class="my-class">Hello, I`m surport style and javasript</div>
+
+<script>
+    console.log('hello world!')
+</script>
+
+<style>
+    .my-class{
+        color: red;
+    }
+</style>
+```
