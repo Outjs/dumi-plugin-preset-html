@@ -29,7 +29,7 @@ export default {
 
 write the following code in index.md, which can execute HTML code, including JavaScript, css.
 
-### demo1:
+### basic demo:
 
 ````
 ```html
@@ -40,7 +40,8 @@ write the following code in index.md, which can execute HTML code, including Jav
 
 ````
 
-### demo2:
+### execute javascript and style demo:
+
 
 ````
 ```html
@@ -59,3 +60,13 @@ write the following code in index.md, which can execute HTML code, including Jav
 
 ```
 ````
+
+### external demo:
+you can reference external HTML file in .md
+
+
+```
+
+<code src="./demo.html">external demo</code>
+
+```

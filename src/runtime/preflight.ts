@@ -21,7 +21,6 @@ export default function preflight(component: any) {
     const js = component?.render?.() || '';
     if (js) {
       el.insertAdjacentHTML('beforeend', js);
-    
       resolve();
     } else {
       console.error('preflight', 'js is empty');

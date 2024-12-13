@@ -19,7 +19,6 @@ export const HtmlTechStack = (runtimeOpts: IDumiTechStackRuntimeOpts) =>
             return ['html'].includes(lang);
         },
         onBlockLoad(args) {
-            logger.info('onBlockLoad', args)
             if (!args.path.endsWith('.html')) return null;
             let raw = args.entryPointCode;
             const id = hashId(raw);
@@ -30,19 +29,16 @@ export const HtmlTechStack = (runtimeOpts: IDumiTechStackRuntimeOpts) =>
             };
         },
         transformCode(raw, opts) {
-            logger.info('transformCode----', raw, opts)
             const id = hashId(raw);
             const filename = opts.fileAbsPath;
             const js = compile({ id, code: raw, filename });
             if (opts.type === 'code-block') {
-
                 const code = wrapDemoWithFn(js, {
                     filename,
                     parserConfig: {
                         syntax: 'ecmascript',
                     },
                 });
-                logger.info(code)
                 return `(${code})()`;
             }
             return js;
