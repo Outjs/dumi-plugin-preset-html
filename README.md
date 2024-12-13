@@ -27,13 +27,13 @@ export default {
 
 write the following code in index.md, which can execute HTML code, including JavaScript, css.
 
-demo1:
+### demo1:
 
 \```html
 <div>Hello, I can dumi plugin for preset html!</div>
 ```
 
-demo2:
+### demo2:
 
 \```html
 <div class="my-class">Hello, I`m surport style and javasript</div>
