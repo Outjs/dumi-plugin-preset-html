@@ -27,11 +27,11 @@ export default {
 
 write the following code in index.md, which can execute HTML code, including JavaScript, css.
 
-```html
+\```html
 <div>Hello, I can dumi plugin for preset html!</div>
-```
+\```
 
-```html
+\```html
 <div class="my-class">Hello, I`m surport style and javasript</div>
 
 <script>
@@ -43,4 +43,4 @@ write the following code in index.md, which can execute HTML code, including Jav
         color: red;
     }
 </style>
-```
+\```
