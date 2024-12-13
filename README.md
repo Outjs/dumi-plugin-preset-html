@@ -29,7 +29,8 @@ write the following code in index.md, which can execute HTML code, including Jav
 
 \```html
 <div>Hello, I can dumi plugin for preset html!</div>
-\```
+```
+
 
 \```html
 <div class="my-class">Hello, I`m surport style and javasript</div>
